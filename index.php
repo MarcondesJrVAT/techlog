@@ -172,6 +172,17 @@
         </div>
     </footer>
 
+    <script>
+        window.addEventListener('DOMContentLoaded', function() {
+            const alertBox = document.querySelector('[role="alert"]');
+            if (alertBox) {
+                setTimeout(() => {
+                    alertBox.remove();
+                }, 5000);
+            }
+        });
+    </script>
+
 </body>
 
 </html>
