@@ -1,0 +1,20 @@
+version: '3.8'
+
+services:
+  web:
+    build:
+      context: .
+      dockerfile: docker/php/Dockerfile
+    container_name: php-apache
+    volumes:
+      - ./:/var/www/html
+    ports:
+      - "8084:80"
+    env_file:
+      - .env
+    networks:
+      - app-net
+
+networks:
+  app-net:
+    driver: bridge
