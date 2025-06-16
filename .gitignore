@@ -1,0 +1,19 @@
+# PHPStorm/IDE
+.idea/
+*.iml
+
+# Composer
+/vendor/
+/composer.lock
+
+# Environment files
+.env
+
+# Cache
+cache/
+*.cache
+
+# Uploads and user files
+uploads/
+files/
+storage/
